@@ -22,7 +22,6 @@ let CanvasJS = CanvasJSReact.CanvasJS;
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 
-
 class App extends React.Component {
     constructor() {
         super();
@@ -112,7 +111,7 @@ class App extends React.Component {
                         </div>
                         <div className='icon'>
                             <div>
-                                <img  src={Path}/>
+                                <img src={Path}/>
                             </div>
                         </div>
                         <div className='icon'>
@@ -142,8 +141,9 @@ class App extends React.Component {
 
                         <div className="flex">
                             <div className="flex-items">
-                                <div className="graph child-item"> <IndividualChart data={this.state.chartObjTop}/></div>
-                                <div className="graph child-item"> <IndividualChart data={this.state.chartObjBottom}/></div>
+                                <div className="graph child-item"><IndividualChart data={this.state.chartObjTop}/></div>
+                                <div className="graph child-item"><IndividualChart data={this.state.chartObjBottom}/>
+                                </div>
                             </div>
                             <div className="flex-items">
                                 <div className="graph child-item">
@@ -186,8 +186,8 @@ class App extends React.Component {
                                         <div className="latest_signup_inner">
                                             <div className="sign-header">Latest Signups</div>
                                             <div className="sign-wrapper-first">
-                                            <div className="sign-name"> Name </div>
-                                            <div> Scheduled Meetings</div>
+                                                <div className="sign-name"> Name</div>
+                                                <div> Scheduled Meetings</div>
                                             </div>
                                         </div>
                                     </div>

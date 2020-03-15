@@ -5,7 +5,7 @@
 
     --main-background-color: #050711;
     --primary-text-color: #cccccc;
-        --secondary-text-color: #849fb4;
+    --secondary-text-color: #849fb4;
 
     --primary-gradient: linear-gradient(
             90deg,
@@ -18,49 +18,62 @@
             rgb(62, 87, 194) 100%
     );
 }
+
 @font-face {
     font-family: 'Montserrat';
     src: url("fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: 'Montserrat-Medium';
     src: url("fonts/Montserrat/Montserrat-Medium.ttf") format("truetype");
 }
+
 @font-face {
     font-family: 'Montserrat-SemiBold';
     src: url("fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url("fonts/Montserrat/Montserrat-Bold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: 'Montserrat-Light';
     src: url("fonts/Montserrat/Montserrat-Light.ttf") format("truetype");
 }
+
 @font-face {
     font-family: 'Montserrat-Thin';
     src: url("fonts/Montserrat/Montserrat-Thin.ttf") format("truetype");
 }
+
 .active {
     background-color: #0D101D;
 }
+
 .selected {
     color: #2F7A8E;
 }
+
 .flex {
     display: flex;
     flex-direction: row;
 }
+
 .user {
     border-radius: 50%;
 }
+
 .primary-text-color {
     color: #cccccc;
 }
+
 .tertiary-color {
     color: #4effa1;
 }
+
 .site {
     width: 100%;
     background: #050711;
@@ -70,30 +83,37 @@
     max-width: 1400px;
     margin: 0 auto;
 }
+
 .header {
     height: 64px;
     border-bottom: 1px solid #1bfbe4;
 }
+
 .header img {
     height: 64px;
 }
+
 .header div {
     padding-left: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .header .custom-element {
     height: 64px;
 }
+
 .custom-element .child-item {
     padding: 0 75px 0 0;
     transition: color 0.3s ease;
 }
+
 .custom-element .child-item:hover {
     cursor: pointer;
     color: #2F7A8E;
 }
+
 .circletag img {
     border-radius: 50%;
     width: 50px;
@@ -102,20 +122,24 @@
     left: -27px;
     border: 2px solid white;
 }
+
 .max-width {
     width: 1175px;
     margin: 0 auto;
 }
+
 .wrapper {
     display: flex;
     margin-top: 30px;
 }
+
 /* overview section */
 .overview {
     height: 60px;
     background-color: #0D101D;
     display: flex;
 }
+
 .parent {
     padding-left: 20px;
     flex-wrap: wrap;
@@ -123,49 +147,61 @@
     align-items: center;
     box-sizing: border-box;
 }
+
 .child {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .child div:nth-child(2) {
     padding-top: 5px;
     font-size: 18px;
     font-weight: bolder;
 }
+
 .primary-color {
     color: #1bfbe4;
 }
+
 .tertiary-color {
     color: #4effa1;
 }
+
 .secondary-color {
     color: #ff56ee;
 }
+
 /* end */
 /* tabs */
 .space-tabs {
     padding: 10px 60px 20px 0;
 }
+
 .tabs {
     border-bottom: 2px solid #181922;
     margin-bottom: 10px;
 }
+
 .tabs div span {
     transition: color 0.3s ease;
 }
+
 .tabs div span:hover {
     color: #2F7A8E;
     cursor: pointer;
 }
+
 /* end */
 /* graph */
 .flex > .flex-items:nth-child(1) {
     flex: 2;
 }
+
 .flex > .flex-items:nth-child(2) {
     flex: 1;
 }
+
 .graph {
     height: 250px;
     margin: 15px 0px 0px 0;
@@ -174,52 +210,65 @@
     background-color: #0D101D;
 
 }
+
 .flex-items:nth-child(2) .graph {
     margin-left: 15px;
 }
+
 .flex-items:nth-child(2) .graph:nth-child(2) {
     height: 50px;
 }
+
 .flex-items:nth-child(2) .graph:nth-child(2) .flex {
     height: 50px;
     line-height: 50px;
 }
-.flex-items:nth-child(2) .graph:nth-child(1),.flex-items:nth-child(2) .graph:nth-child(3) {
+
+.flex-items:nth-child(2) .graph:nth-child(1), .flex-items:nth-child(2) .graph:nth-child(3) {
     height: 225px;
 }
+
 .bar {
     border-right: 3px solid red;
     padding-left: 10px;
     height: 25px;
 }
+
 /* end */
 .nav {
     width: 100px;
     height: 500px;
     margin-top: 45px;
 }
+
 .icon {
     margin: 0 auto;
     margin-bottom: 15px;
 }
+
 .icon div {
     padding: 15px;
     cursor: pointer;
 }
+
 .icon div:hover {
     background-color: #0D101D;
 }
+
 .row {
     flex-wrap: wrap;
     width: 100%;
 }
+
 .column {
     display: flex;
     flex-direction: column;
 }
+
 .child-item {
     flex: 1;
 }
+
 .custom-child-item {
     flex: 10;
     background: #45A7BA;
@@ -228,85 +277,95 @@
     position: relative;
     width: 250px;
 }
+
 div.custom-child-item div:nth-child(3) {
     flex-direction: column;
     padding: 0 10px;
 }
+
 div.custom-child-item div:nth-child(3) div:nth-child(1) {
     font-size: 10px;
 }
+
 div.custom-child-item div:nth-child(3) div:nth-child(2) {
     font-size: 15px;
     padding-top: 7px;
 }
+
 .footer {
     height: 100px;
 }
 
 
-@media screen and (min-width:1150px) and (max-width:1250){
+@media screen and (min-width: 1150px) and (max-width: 1250) {
     .max-width {
         width: 1100px;
     }
 }
 
-@media screen and (min-width:1024px) and (max-width:1149){
+@media screen and (min-width: 1024px) and (max-width: 1149) {
     .max-width {
         width: 950px;
     }
 }
 
-.latest_signup{
-   padding:2%;
+.latest_signup {
+    padding: 2%;
 }
-.latest_signup_inner{
-    margin-top:2%;
-    height:70px;
-    background-color:#050711;
+
+.latest_signup_inner {
+    margin-top: 2%;
+    height: 70px;
+    background-color: #050711;
 }
-.signup-list{
-    margin:30px;
+
+.signup-list {
+    margin: 30px;
 }
-.sign-header{
-    margin:1px 0 0 2px;
-    padding:15px;
-    color:#849fb4;
+
+.sign-header {
+    margin: 1px 0 0 2px;
+    padding: 15px;
+    color: #849fb4;
     font-size: 18px;
     font-weight: bolder;
 }
-.sign-wrapper-first{
+
+.sign-wrapper-first {
     display: flex;
     font-size: 12px;
     font-weight: normal;
-    color:#849fb4;
+    color: #849fb4;
     justify-content: center;
 
     margin-top: 3px;
 }
 
-.sign-wrapper{
+.sign-wrapper {
     display: flex;
     font-size: 12px;
     font-weight: normal;
-    color:#849fb4;
+    color: #849fb4;
     justify-content: center;
     padding: 10px;
     border-bottom: 1px solid #181922
 
 }
-.sign-name{
+
+.sign-name {
     padding-right: 150px;
 
 }
-.sign-name-list{
+
+.sign-name-list {
     padding-right: 120px;
     padding-left: 5px;
     font-size: 10px;
 }
 
-.bar{
-    width:0.1rem;
-    height:10px;
-    border-right-color:#1bfbe4;
+.bar {
+    width: 0.1rem;
+    height: 10px;
+    border-right-color: #1bfbe4;
     padding-left: 10px;
 }

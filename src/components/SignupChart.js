@@ -6,14 +6,15 @@ import CanvasJSReact from '../assets/canvasjs.react';
 
 let CanvasJS = CanvasJSReact.CanvasJS;
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
 class SignupChart extends React.Component {
 
     render() {
         const optionsPie = {
             height: 180,
             width: 180,
-            margin:10,
-            backgroundColor:"transparent",
+            margin: 10,
+            backgroundColor: "transparent",
             animationEnabled: true,
             responsive: true,
             maintainAspectRatio: false,
@@ -22,7 +23,7 @@ class SignupChart extends React.Component {
             },
             subtitles: [{
                 text: "648",
-                fontColor:'#849fb4',
+                fontColor: '#849fb4',
                 verticalAlign: "center",
                 fontSize: 22,
                 dockInsidePlotArea: true
@@ -30,12 +31,12 @@ class SignupChart extends React.Component {
             data: [{
                 type: "doughnut",
                 dataPoints: [
-                    {y: 16,color:'#ff56ee'},//pink
-                    {y: 8,color:'#1bfbe4'}
+                    {y: 16, color: '#ff56ee'},//pink
+                    {y: 8, color: '#1bfbe4'}
                 ]
             }]
         }
-        return  <div>
+        return <div>
             <CanvasJSChart options={optionsPie}/>
         </div>
     }
