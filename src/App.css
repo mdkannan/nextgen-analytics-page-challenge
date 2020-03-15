@@ -38,8 +38,11 @@ body{
   color:white !important;
 }
 
-/*************************/
+/***********chart properties handling**************/
 #canvasjs-react-chart-container-0{
   width:50% !important;
+}
+.canvasjs-chart-credit{
+  display: none !important;
 }
 

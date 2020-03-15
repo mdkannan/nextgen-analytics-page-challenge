@@ -83,6 +83,9 @@ class IndividualChart extends React.Component {
                     }
                 }
             },
+            credits: {
+                enabled: false
+            },
             series: [{
                 name: 'London',
                 marker: {
