@@ -25,7 +25,13 @@ let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 class App extends React.Component {
     constructor() {
         super();
+        let tempDate = new Date();
+        let date = tempDate.getDate() + '-' + (tempDate.getMonth() + 1) + '-' + tempDate.getFullYear();
+        let hours = tempDate.getHours() + ':' + tempDate.getMinutes();
+
         this.state = {
+            date: date,
+            hour: hours,
             chartObjTop: {
                 title: "Individuals",
                 color: ['rgba(78, 255, 207)', 'rgba(8, 164, 188)'],
@@ -59,8 +65,8 @@ class App extends React.Component {
                             </div>
                             <div>Elsa Anderson</div>
                             <div>
-                                <div>17-02-2020</div>
-                                <div>2.45PM</div>
+                                <div>{this.state.date}</div>
+                                <div>{this.state.hour}PM</div>
                             </div>
                         </div>
                     </div>
