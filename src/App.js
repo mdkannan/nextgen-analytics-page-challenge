@@ -1,7 +1,7 @@
 import React from 'react';
 import CanvasJSReact from './assets/canvasjs.react';
-import IndividualChart from './compents/IndividualChart';
-import SignupChart from './compents/SignupChart';
+import IndividualChart from './components/IndividualChart';
+import SignupChart from './components/SignupChart';
 
 import './App.css';
 
