@@ -1,10 +1,7 @@
 import React from "react";
-import Highcharts from 'highcharts';
-import HighchartsReact from 'highcharts-react-official';
 import CanvasJSReact from '../assets/canvasjs.react';
 
 
-let CanvasJS = CanvasJSReact.CanvasJS;
 let CanvasJSChart = CanvasJSReact.CanvasJSChart;
 
 class SignupChart extends React.Component {

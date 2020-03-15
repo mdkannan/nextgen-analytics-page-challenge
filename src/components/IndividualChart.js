@@ -2,7 +2,6 @@ import React from "react";
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-const condition = Boolean(Math.round(Math.random()))
 
 class IndividualChart extends React.Component {
 
@@ -97,7 +96,7 @@ class IndividualChart extends React.Component {
                 },
 
                 fillColor: {
-                    linearGradient: [this.props.data.color[0], this.props.data.color[1], 0, 300],
+                    linearGradient: [0, 0, 0, 300],
                     stops: [
                         [0, this.props.data.color[0]],
                         [1, this.props.data.color[1]]

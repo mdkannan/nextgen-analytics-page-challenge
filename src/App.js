@@ -1,5 +1,4 @@
 import React from 'react';
-import CanvasJSReact from './assets/canvasjs.react';
 import IndividualChart from './components/IndividualChart';
 import SignupChart from './components/SignupChart';
 
@@ -18,8 +17,7 @@ import One from './assets/icons/one.JPG';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
-let CanvasJS = CanvasJSReact.CanvasJS;
-let CanvasJSChart = CanvasJSReact.CanvasJSChart;
+
 
 
 class App extends React.Component {
@@ -61,7 +59,7 @@ class App extends React.Component {
                         <div className="child-item">HELP</div>
                         <div className="custom-child-item">
                             <div className="circletag" id="nay">
-                                <img src={One}/>
+                                <img src={One} alt="one logo"/>
                             </div>
                             <div>Elsa Anderson</div>
                             <div>
@@ -107,32 +105,32 @@ class App extends React.Component {
                     <div className='column nav'>
                         <div className='icon'>
                             <div className="active">
-                                <img src={Signup}/>
+                                <img src={Signup} alt="sign up"/>
                             </div>
                         </div>
                         <div className='icon'>
                             <div>
-                                <img src={Funds}/>
+                                <img src={Funds} alt={"funds"}/>
                             </div>
                         </div>
                         <div className='icon'>
                             <div>
-                                <img src={Path}/>
+                                <img src={Path} alt="path"/>
                             </div>
                         </div>
                         <div className='icon'>
                             <div>
-                                <img src={History}/>
+                                <img src={History} alt="history"/>
                             </div>
                         </div>
                         <div className='icon'>
                             <div>
-                                <img src={Verification}/>
+                                <img src={Verification} alt="verification"/>
                             </div>
                         </div>
                         <div className='icon'>
                             <div>
-                                <img src={Padlock}/>
+                                <img src={Padlock} alt="pad locked"/>
                             </div>
                         </div>
                     </div>
