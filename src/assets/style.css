@@ -276,6 +276,7 @@
     color: white;
     position: relative;
     width: 250px;
+    margin-right: -108px;
 }
 
 div.custom-child-item div:nth-child(3) {

@@ -20,7 +20,7 @@ class SignupChart extends React.Component {
             },
             subtitles: [{
                 text: "648",
-                fontColor: '#849fb4',
+                fontColor: "#849fb4",
                 verticalAlign: "center",
                 fontSize: 22,
                 dockInsidePlotArea: true

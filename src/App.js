@@ -17,7 +17,7 @@ import One from './assets/icons/one.JPG';
 
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
-
+/***story points for this task is 8 as estimation value in a sprint development***************************/
 class App extends React.Component {
     constructor() {
         super();
@@ -98,42 +98,42 @@ class App extends React.Component {
                     </div>
                 </div>
             </div>
-            <div className='wrapper max-width'>
-                <div className='row flex'>
-                    <div className='column nav'>
-                        <div className='icon'>
+            <div className="wrapper max-width">
+                <div className="row flex">
+                    <div className="column nav">
+                        <div className="icon">
                             <div className="active">
                                 <img src={Signup} alt="sign up"/>
                             </div>
                         </div>
-                        <div className='icon'>
+                        <div className="icon">
                             <div>
                                 <img src={Funds} alt={"funds"}/>
                             </div>
                         </div>
-                        <div className='icon'>
+                        <div className="icon">
                             <div>
                                 <img src={Path} alt="path"/>
                             </div>
                         </div>
-                        <div className='icon'>
+                        <div className="icon">
                             <div>
                                 <img src={History} alt="history"/>
                             </div>
                         </div>
-                        <div className='icon'>
+                        <div className="icon">
                             <div>
                                 <img src={Verification} alt="verification"/>
                             </div>
                         </div>
-                        <div className='icon'>
+                        <div className="icon">
                             <div>
                                 <img src={Padlock} alt="pad locked"/>
                             </div>
                         </div>
                     </div>
-                    <div className='column child-item'>
-                        <div className='flex tabs'>
+                    <div className="column child-item">
+                        <div className="flex tabs">
                             <div className="column space-tabs selected"><span>Signups</span></div>
                             <div className="column space-tabs"><span>Investments</span></div>
                             <div className="column space-tabs"><span>Revenue</span></div>

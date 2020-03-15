@@ -9,20 +9,20 @@ class IndividualChart extends React.Component {
         const dat = this.props.data.chartData;
         const options2 = {
             chart: {
-                type: 'areaspline',
-                backgroundColor: '#0D101D',
+                type: "areaspline",
+                backgroundColor: "#0D101D",
                 height: 250
             },
             title: {
                 text: this.props.data.title,
                 style: {
-                    color: '#cccccc'
+                    color: "#cccccc"
                 }
             },
             legend: {
                 enabled: false,
                 style: {
-                    color: '#cccccc'
+                    color: "#cccccc"
                 }
 
             },
@@ -60,7 +60,7 @@ class IndividualChart extends React.Component {
                 },
                 labels: {
                     style: {
-                        color: 'white'
+                        color: "white"
                     },
                     formatter: function () {
                         return this.value;
@@ -82,7 +82,7 @@ class IndividualChart extends React.Component {
                 spline: {
                     marker: {
                         radius: 4,
-                        lineColor: '#666666',
+                        lineColor: "#666666",
                         lineWidth: 1
                     }
                 }
