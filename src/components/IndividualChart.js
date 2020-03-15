@@ -10,7 +10,7 @@ class IndividualChart extends React.Component {
         const options2 = {
             chart: {
                 type: 'areaspline',
-                backgroundColor: '#282c34',
+                backgroundColor: '#0D101D',
                 height: 250
             },
             title: {
@@ -70,7 +70,10 @@ class IndividualChart extends React.Component {
             tooltip: {
                 //crosshairs: true,
                 shared: true,
-                pointFormat: '<b>{point.y:.0f}</b>'
+
+                formatter: function() {
+                    return this.y ;
+                }
             },
             plotOptions: {
                 areaspline: {
