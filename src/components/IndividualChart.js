@@ -12,8 +12,7 @@ class IndividualChart extends React.Component {
             chart: {
                 type: 'areaspline',
                 backgroundColor: '#282c34',
-                height: 250,
-                // width:650
+                height: 250
             },
             title: {
                 text: this.props.data.title,
@@ -32,7 +31,7 @@ class IndividualChart extends React.Component {
                 tickLength: 0,
                 crosshair: {
                     width: .9,
-                    color: '#4effa1',
+                    color: this.props.data.color[0],
                     height: 2
                 },
                 gridLineWidth: 0,
@@ -53,7 +52,7 @@ class IndividualChart extends React.Component {
             yAxis: {
                 crosshair: {
                     width: 1,
-                    color: '#4effa1',
+                    color: this.props.data.color[0],
                 },
                 tickInterval: 3,
                 gridLineWidth: 0,
@@ -75,6 +74,9 @@ class IndividualChart extends React.Component {
                 pointFormat: '<b>{point.y:.0f}</b>'
             },
             plotOptions: {
+                areaspline: {
+                    lineColor: this.props.data.color[0]
+                },
                 spline: {
                     marker: {
                         radius: 4,
@@ -89,18 +91,17 @@ class IndividualChart extends React.Component {
             series: [{
                 name: 'London',
                 marker: {
-                    symbol: 'diamond'
+                    symbol: 'circle',
+                    fillColor: this.props.data.color[0]
+
                 },
 
                 fillColor: {
-                    linearGradient: [0, 0, 0, 300],
+                    linearGradient: [this.props.data.color[0], this.props.data.color[1], 0, 300],
                     stops: [
                         [0, this.props.data.color[0]],
                         [1, this.props.data.color[1]]
-                        // [0, 'blue'],
-                        // [1, 'rgba(2,0,0,0)']
-                        // [0,'rgba(78, 255, 207)'],
-                        //    [1, 'rgba(8, 164, 188) ']
+
                     ]
                 },
                 data: dat
