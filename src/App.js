@@ -18,8 +18,6 @@ import One from './assets/icons/one.JPG';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 
 
-
-
 class App extends React.Component {
     constructor() {
         super();
@@ -152,13 +150,15 @@ class App extends React.Component {
                             <div className="flex-items">
                                 <div className="graph child-item">
                                     <div className="chart-wrapper">
-                                        <div>
+                                        <div className="child-item">
                                             <SignupChart/>
                                         </div>
-                                        <div>
-                                            <span>Total Signups</span>
-                                            <div> Individuals</div>
-                                            <div> Companies</div>
+                                        <div className="child-item chart-signups">
+                                            <div className="total-signups">Total Signups</div>
+                                            <div className="total-signups"> Individuals <span>284</span> <span
+                                                className="bar"></span></div>
+                                            <div className="total-signups"> Companies <span>364</span> <span
+                                                className="bar"></span></div>
                                         </div>
                                     </div>
 
@@ -168,7 +168,7 @@ class App extends React.Component {
                                 <div className="graph child-item">
                                     <div className="flex">
                                         <div className="child child-item">
-                                            <div>By Gender</div>
+                                            <div><span className="bar"></span> &nbsp; By Gender</div>
                                         </div>
                                         <div className="child child-item">
                                             <div className="primary-text-color">Female

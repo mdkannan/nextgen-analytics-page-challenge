@@ -1,48 +1,54 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
-body{
-  color:white;
+
+body {
+    color: white;
 }
 
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.chart-wrapper{
-  display: flex;
-  justify-content: left;
-}
-.individual-char{
-  margin:1rem;
+.chart-wrapper {
+    display: flex;
+    justify-content: left;
 }
 
-.chart-container,.highcharts-grid {
-  display: none;
+.individual-char {
+    margin: 1rem;
 }
-.tspan{
-  color:white !important;
+
+.chart-container, .highcharts-grid {
+    display: none;
+}
+
+.tspan {
+    color: white !important;
 }
 
 /***********chart properties handling**************/
-#canvasjs-react-chart-container-0{
-  width:50% !important;
+#canvasjs-react-chart-container-0 {
+    width: 50% !important;
 }
-.canvasjs-chart-credit{
-  display: none !important;
+
+.canvasjs-chart-credit {
+    display: none !important;
 }
+
+
 

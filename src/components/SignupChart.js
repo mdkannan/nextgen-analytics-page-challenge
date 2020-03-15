@@ -8,7 +8,7 @@ class SignupChart extends React.Component {
 
     render() {
         const optionsPie = {
-            height: 180,
+            height: 225,
             width: 180,
             margin: 10,
             backgroundColor: "transparent",

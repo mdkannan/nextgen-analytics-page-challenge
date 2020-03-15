@@ -369,3 +369,40 @@ div.custom-child-item div:nth-child(3) div:nth-child(2) {
     border-right-color: #1bfbe4;
     padding-left: 10px;
 }
+
+
+.chart-wrapper {
+    flex-direction: row;
+}
+
+.chart-signups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-signups {
+    padding: 10px;
+}
+
+.chart-signups .total-signups:nth-child(1) {
+    font-size: 14px;
+    padding: 25px;
+}
+
+.chart-signups .total-signups:nth-child(2), .chart-signups .total-signups:nth-child(3) {
+    font-size: 15px;
+}
+
+.chart-signups .total-signups:nth-child(2) span {
+    padding-left: 15px;
+    margin-top: 10px;
+    height: 50px;
+}
+
+.chart-signups .total-signups:nth-child(3) span {
+    padding-left: 15px;
+    margin-top: 20px;
+    height: 50px;
+}

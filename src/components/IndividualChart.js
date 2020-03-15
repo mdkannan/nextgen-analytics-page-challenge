@@ -71,8 +71,8 @@ class IndividualChart extends React.Component {
                 //crosshairs: true,
                 shared: true,
 
-                formatter: function() {
-                    return this.y ;
+                formatter: function () {
+                    return this.y;
                 }
             },
             plotOptions: {
